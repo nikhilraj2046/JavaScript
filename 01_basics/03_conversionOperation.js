@@ -29,6 +29,47 @@ let m=Boolean(IsLoggedIn);
 
 let someNumber=33
 let sconversion=String(someNumber);
-console.log(typeof sconversion);
-console.log(sconversion);
+// console.log(typeof sconversion);
+// console.log(sconversion);
+
+/* *********************        OPERATIONS     ****************************** */
+
+let value=3
+let negvalue=-value
+// console.log(negvalue);
+
+// console.log(2+2);
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2**2)
+// console.log(2**3)
+// console.log(2/3)
+// console.log(4%2)
+
+let str1="hello"
+let str2=" nikhil"
+let str3=str1+str2
+// console.log(str3)
+
+// console.log("1"+2)
+// console.log(1+"2")
+// console.log("1"+"2")
+// console.log("1"+2+2)
+// console.log(1+2+"2"); // output 32
+// console.log((3+4)*5%3)
+
+
+console.log(+true) // it forces to convert in the number
+
+console.log(+"")
+
+
+let num1,num2,num3
+num1 = num2 = num3 = 2+2
+
+
+let gameCounter = 100
+gameCounter++;
+console.log(gameCounter)
+
 
