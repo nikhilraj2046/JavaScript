@@ -22,21 +22,52 @@ const anotherId=Symbol('123')
 //Array, Object, Functions
 
 //arrray
-const heroes=["shaktiman","naagraj","doga"]
+const heroes=["shaktiman","naagraj","doga"]  //datatypes is object
 
 // object
-let myObj={
+let myObj={ //datatype is object
     name:"nikhil",
     age: 22,
 }
 
 //function
 
-const myFunction=function(){
-    console.log("Hello World");
+const myFunction=function(){ // datatype is function
+    // console.log("Hello World");
 }
 
- console.log(typeof myFunction)
- console.log(typeof myObj)
- console.log(typeof heroes)
+//  console.log(typeof myFunction)
+//  console.log(typeof myObj)
+//  console.log(typeof heroes)
+
+
+
+
+// ++++++++++++++++++++++++++++++++++
+
+
+// STACK (Primitive), HEAP (Non-Primitive)
+
+let myYoutubename="nikhilrajdotcom"
+
+let anothername=myYoutubename
+anothername="chaiaurcode"
+
+console.log(myYoutubename)
+console.log(anothername)
+
+
+let user={
+    email:"user@google.com",
+    upi:"user@ybl",
+}
+
+let useroneuser
+
+userone.email="nikhil@google.com"
+
+console.log(user.email);
+console.log(userone.email);
+
+
 
