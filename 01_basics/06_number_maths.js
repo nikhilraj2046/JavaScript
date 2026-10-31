@@ -1,41 +1,57 @@
-const score = 400;
-// console.log(score);
-const balance = new Number(400);
-// console.log(balance);
+ let num1=230
+ console.log(typeof num1) // number
+ let num2=new Number(230)
+ console.log(typeof num2) // object
+ let num3=new Number(230)
+ console.log(num1==num2) // true
+ console.log(num2==num3) // false because num2 and num3 ka address alag hai toh stack mein address alag hone ke wajah se false return hoga 
 
-// console.log(balance.toString())
+ let num4 = 231.68
 
+ // toFixed() ka simple mtlb h ki kitne decimal places tk number ko round off karna h
+ console.log(num4.toFixed(1)) // 231.7
 
-// console.log(balance.toFixed(2));  // output after decimal
+ //toPrecision() ka simple mtlb h ki kitne significant digits tk number ko round off karna h
+ console.log(num4.toPrecision(3)) // 231
 
+ //.toExponential() ka simple mtlb h ki number ko exponential form mein convert karna h
+console.log(num4.toExponential(2)) // 2.32e+2
 
-const otherNumber=23.8696
-// console.log(otherNumber.toPrecision(2))  // output using toPrecision gives from counting the number from left side 
+// .toString() ka simple mtlb h ki number ko string mein convert karna h
+console.log(num4.toString()) // 231.68
+console.log(typeof num4.toString()) // string
 
-const x=1000000
-// console.log(x.toLocaleString()); // it give us based o/p i.e. 1,000,000
-// console.log(x.toLocaleString('en-IN')) ;// it gives indian value o/p
+// .valueOf() ka simple mtlb h ki number ko primitive value mein convert karna h
+console.log(num4.valueOf()) // 231.68
+console.log(typeof num4.valueOf()) // number
 
+// ***************************MATH OBJECT******************************
 
-// +++++++++++++++++++++++++++++++++++ MATHS  ++++++++++++++++++++++++++++++++++++++++++++++++
+console.log(Math.E) // 2.718281828459045
+console.log(Math.PI) // 3.141592653589793
+console.log(Math.SQRT2) // 1.4142135623730951
 
-// it is a library in js
+// random() ka simple mtlb h ki 0 se 1 ke beech mein random number generate karna h
+console.log(Math.random()) // 0.123456789
+// 0 <=value < 1
 
-// console.log(Math)
-// console.log(Math.abs(-5))
-// console.log(Math.round(4.6))
-// console.log(Math.ceil(4.2))  // o/p------ 5
-// console.log(Math.floor(4.3)) //o/p --===== 4
-// console.log(Math.sqrt(81))
-// console.log(Math.min(5,7,8,1))
-// console.log(Math.max(5,7,8,9,7,2,55,99,111,5,2))
+console.log(Math.random()*10) // 0 <=value < 10
+console.log(Math.floor(Math.random()*10)) // 0 <=value < 10
 
+console.log(Math.ceil(Math.random()*10)) // 1 <=value < 10
 
-console.log(Math.random());  // Math.random() generates a random decimal number greater than or equal to 0 and less than 1.
-console.log((Math.random()*10)+1);  // 
-console.log(Math.floor(Math.random()*10)+1)
+//1-10 generate karne ke liye
+console.log(Math.floor(Math.random()*10)+1) // 1 <=value < 11
 
-const min=10;
-const max = 20;  // max - min + 1 sets the size of the range.
-console.log(Math.floor(Math.random()*(max-min+1))+min)
+//11-20 generate karne ke liye
+console.log(Math.floor(Math.random()*10)+11) // 11 <=value < 21
+
+//41-50 generate karne ke liye
+console.log(Math.floor(Math.random()*10)+41) // 41 <=value < 51
+
+// 1-100 generate karne ke liye
+console.log(Math.floor(Math.random()*100)+1) // 1 <=value < 101
+
+let min = 40, max = 50;
+console.log(Math.floor(Math.random()*(max-min+1)+min)) // 40 <=value < 51
 
